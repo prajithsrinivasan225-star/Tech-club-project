@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@media print {
+  aside,
+  header button,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  main {
+    overflow: visible !important;
+    width: 100% !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
